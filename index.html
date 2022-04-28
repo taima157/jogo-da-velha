@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>JOGO DA VELHA</h1>
+        <div id="menu-select">
+            <div id="play">
+                <button onclick="play()">JOGAR</button>
+            </div>
+            <div id="select-mode">
+                <button onclick="selectMode('1p')">1 Jogador</button>
+                <button onclick="selectMode('2p')">2 Jogadores</button>
+            </div>
+        </div>
+        <div id="jogo-da-velha">
+            <div id="game">
+                <h1 id="res" style="visibility: hidden;">o</h1>
+                <table>
+                    <tr>
+                        <td><div class="positions x" id="position1"></div></td>
+                        <td><div class="positions x" id="position2"></div></td>
+                        <td><div class="positions x" id="position3"></div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="positions x" id="position4"></div></td>
+                        <td><div class="positions x" id="position5"></div></td>
+                        <td><div class="positions x" id="position6"></div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="positions x" id="position7"></div></td>
+                        <td><div class="positions x" id="position8"></div></td>
+                        <td><div class="positions x" id="position9"></div></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="content-menu">
+                <button onclick="restart()">Reiniciar</button>
+                <button onclick="back()">Voltar</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
