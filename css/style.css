@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+table {
+    background-color: black;
+}
+
+#container {
+    background-color: lightgrey;
+    min-width: 500px;
+    padding: 50px;
+    border-radius: 30px;
+    border: 2px solid black;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 4px 5px 13px 1px rgba(0, 0, 0, 0.356);
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#play button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    width: 180px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#play button:hover {
+    background-color: lightgoldenrodyellow;
+    transition: 0.5s;
+}
+
+#select-mode {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}    
+
+#select-mode button {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    width: 155px;
+    height: 40px;
+    padding: 5px 10px;
+    border: 2px solid black;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#select-mode button:hover {
+    background-color: lightgoldenrodyellow;
+    transition: 0.5s;
+}
+
+#jogo-da-velha {
+    display: none;
+}
+
+#game {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#game h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#game span {
+    text-shadow: 1px 1px 2px black;
+}
+
+#content-menu {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#content-menu button {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    width: 120px;
+    height: 40px;
+    padding: 5px 10px;
+    border: 2px solid black;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#content-menu button:first-child:hover {
+    background-color: rgb(84, 245, 191);
+    transition: 0.5s;
+}
+
+#content-menu button:last-child:hover {
+    background-color: rgb(255, 126, 126);
+    transition: 0.5s;
+}
+
+#select-mode {
+    visibility: hidden;
+}
+
+.visible-select-mode {
+    visibility: visible;
+}
+
+.positions {
+    min-width: 115px;
+    min-height: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5em;
+    background-color: gray;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    #container {
+        min-width: 380px;
+        max-width: 380px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #play button {
+        font-size: 1em;
+        width: 165px;
+        height: 35px;
+    }
+
+    #select-mode button {
+        width: 125px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    #game h1 {
+        font-size: 1.5em;
+    }
+
+    #content-menu button {
+        font-size: 14px;
+        width: 110px;
+        height: 30px;
+    }
+    
+    .positions {
+        min-width: 100px;
+        min-height: 100px;
+    }
+}
+
+.x:hover::before {
+    color: rgba(0, 0, 0, 0.397);
+    content: "x";
+}
+
+.o:hover::before {
+    color: rgba(0, 0, 0, 0.397);
+    content: "o";
+}
